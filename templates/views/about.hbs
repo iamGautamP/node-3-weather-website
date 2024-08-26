@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>About</title>
+    <link rel="icon" href="/img/clear-sky.png">
+    <link rel="stylesheet" href="./css/style.css"> <!-- This path is relative and this is done to load the css file here or we could also have given the absolute path from the root directory for the css file which is the public directory /css/styles.css -->
+
+
+</head>
+
+<body>
+    <div class="main_content">
+        {{>headers}}
+        <img class="portrait" src="/img/Gautam.jpg">
+        {{!<p>created by {{name} </p> : earlier we had this but now we use footer}}
+    </div>
+
+    {{>footers}}
+
+</body>
+
+</html>

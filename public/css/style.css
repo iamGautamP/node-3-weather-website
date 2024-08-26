@@ -1,0 +1,74 @@
+/* h1 {
+    color: grey;
+}
+/* since we want only to style the h1 tags in the html files since right now we only have that */
+/* we now need to load this in our html file using link tag for this effect to take place */
+/* after the above affect we have now added an image in About page and now we want to style it */
+
+/* img {
+    width: 250px;
+} */ 
+
+
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display:flex;
+    flex-direction: column; /*  enabling flex box */
+    min-height: 100vh;
+}
+
+.main_content {
+    flex-grow: 1; /*this allows a given element to grow to take up as much space as it needs, the main_content should take up all the leftover space is indicated by 1 */
+}
+
+footer {
+    /* background: blue;
+    padding: 16px;
+    margin: 16px; */
+    color: #888888;
+    border-top: 1px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+header a { /*targeting the links/navigation bars inside of the headers and not in all the pages */
+    color:#888888;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/* since we donot want this effect to take on every image hence we use class selector that allows us to target a specific set of elements and since we are
+styling portrait image, we will use .portrait but also so far we have not used portrait in our code and so this style to apply to our image we need 
+to set up a class attribut on our html element where we want this styles to be applied, in this case in the about page in img element */
+.portrait {
+    width: 250px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px
+
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: white;
+    padding: 8px;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Help</title>
+    <link rel="icon" href="/img/clear-sky.png">
+    <link rel="stylesheet" href="./css/style.css"> <!-- This path is relative and this is done to load the css file here or we could also have given the absolute path from the root directory for the css file which is the public directory /css/styles.css -->
+
+
+</head>
+
+<body>
+    <div class="main_content">
+        {{>headers}}
+        {{! we removed the h1 tag from here sice now we are using partials to get the title acting as a header}}
+        <p>{{message}}</p>
+    </div>
+
+    {{>footers}}
+</body>
+
+</html>

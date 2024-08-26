@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Weather</title>
+    <link rel="icon" href="/img/clear-sky.png">
+    <link rel="stylesheet" href="./css/style.css"> 
+
+
+</head>
+
+<body>
+    <div class="main_content">
+        {{>headers}}
+        <p>Use this site to get your Weather!</p>
+
+        <form> {{!--providethe forms to get the user inputs as address --}}
+            <input placeholder="location">
+            <button>Search</button>
+        </form>
+{{!-- the id is provided so that we can target them properly in the client side javascript since there are many p tags here --}}
+{{!-- these p tags are to provide errors or forecast as we can see in the clinet side javascript --}}
+        <p id="message-1"></p>
+        <p id="message-2"></p>
+
+    </div> 
+    
+    {{>footers}}
+
+    <script src = "./js/app.js"></script> 
+    {{!-- we are using the script here since we want our form to be filled and then this code to run --}}
+
+</body>
+
+</html>
